@@ -1,0 +1,68 @@
+body {
+    background-image: url("../images/background.jpg");    
+    font-family:'Orbitron', sans-serif;  
+    text-align: center; 
+    color: aliceblue
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    background-color: black;
+    margin: 10%, 20%, 10%, 20%;
+    padding-block-end: 0, 50%;
+}
+
+header{
+    background-color: black;
+}
+
+h1 {
+    color: aliceblue;
+    font-size: 30px;
+    text-align: center;
+    margin: 25px;
+}
+
+#gameWrapper {
+    opacity: 20%;
+    display: flex;
+    align-items: center;
+}
+
+images {
+    height: 100px;
+    margin: 5%;
+}
+
+.character {
+    display: inline-block;
+    margin: 10px;
+
+}
+
+.character-name {
+    text-align: center;
+}
+
+.character-health {
+    text-align: center;
+}
+
+
+button {
+    margin: 40%, 10%;
+    float: left;
+}
+
+
+
+img {
+    height: 100px;
+}
+
+#randomNumber {
+    font-size: 50px;
+}
