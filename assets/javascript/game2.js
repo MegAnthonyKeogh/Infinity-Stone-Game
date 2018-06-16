@@ -35,12 +35,20 @@
   
     if (counter === targetNumber) {
         wins++;
+        $("#counter").text("You win!");
+      $(".wins").empty();
+      $(".wins").append("You have "+ wins + "wins and " + losses + " losses")
       $("#counter").text("You win!");
+      $('.character').prop('disabled', true);
     }
   
     else if (counter >= targetNumber) {
         losses++;
+      $(".wins").empty();
+      $(".wins").append("You have "+ wins + "wins and " + losses + " losses")
       $("#counter").text("You lose!!");
+      $( ".character" ).prop( "disabled", true );
+      $('.character').prop('disabled', true);
       
     }
 
@@ -52,14 +60,24 @@ function randomNumber(){
   $("#randomNumber").text(targetNumber);
   }
 
-  $("button").on("click", function(){
+
+  //restart 
+  $("#restart").on("click", function(){
+    $('.character').prop('disabled', false);
+    randomNumber();
+    counter = 0
+
+  })
      
     randomNumber();
      
     // reset counters
     counter = 0
     
-  })
+
+
+ 
+
    
 
   
